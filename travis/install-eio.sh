@@ -3,7 +3,7 @@
 git clone https://github.com/rosmanov/pecl-eio
 pushd pecl-eio;
 phpize;
-./configure;
+./configure --with-eio --enable-eio-sockets;
 make;
 make install;
 popd;
